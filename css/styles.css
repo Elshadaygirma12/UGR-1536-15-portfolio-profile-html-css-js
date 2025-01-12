@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color:rgb(12, 20, 243);
+}
+a:hover{
+    background-color: rgb(158, 158, 238);
+}
+
+header{
+    background-color: rgb(108, 108, 188);
+    height: 70px;
+    text-align: center;
+    position: relative;
+    
+}
+
+nav ul li a.active {
+    text-decoration: underline; 
+}
+h1{
+    text-align: center;
+    color: blue;
+    margin-top: 300px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+.container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    text-align: center; 
+}
+.link{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #C1C3F4; 
+    color:  blue;
+    text-decoration: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    margin-bottom: 250px;
+    
+}
+
+#body1{
+    background-image: url('../images/mypic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    background-color: rgb(219, 221, 247);
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;  
+}
+.paragraph{
+    padding: 40px;
+    text-align: center;
+}
+main {
+    display: flex;         
+    flex-wrap: wrap;      
+    gap: 40px;           
+    margin-bottom: 150px;
+}
+    
+.section {
+    flex: 1;              
+    min-width: 200px;     
+    background: #C1C3F4;  
+    padding: 40px;        
+}
+.section2 {
+    flex: 1;              
+    min-width: 200px;     
+    background:  rgb(219, 221, 247);  
+    padding: 40px;        
+}
+img {
+    max-width: 100%; 
+     
+         
+}
+audio {
+    width: 100%;
+   
+    
+}
+.div2{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    
+}
+.div2 div {
+    flex: 1;
+}
+.contact-info {
+    flex: 1;
+    background-color: #C1C3F4;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+
+.form-container {
+    flex: 1;
+    background-color: #C1C3F4;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+.input-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    margin-bottom: 15px; 
+}
+.input-container1 div {
+    flex: 1; 
+   
+    margin-right: 10px; 
+    margin-bottom: 20px;
+}
+#name, #Father-name {
+    width: 250px; 
+}
+#email{
+    width: 600px;
+    height: 40px;
+}
+#message{
+    height:70px;
+    width: 600px
+}
+label {
+    margin-bottom: 10px; 
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid  blue;
+    border-radius: 5px;
+    background-color: #C1C3F4 ;
+}
+
+button {
+    padding: 10px;
+    background-color: #C1C3F4;
+    color: black; 
+    border-radius: 7px;
+    border: 2px solid blue ;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(108, 108, 188);
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; 
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+@media (max-width: 956px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: rgb(108, 108, 188);;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+    .input-container1 {
+        flex-direction: column; 
+    }
+    main{
+        flex-direction: column;
+    }
+    .section{
+        width: 300px;
+    }
+    .section2{
+        width: 300px;
+    }
+    img{
+        max-height: 300px;
+    }
+}
+
